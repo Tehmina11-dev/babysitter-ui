@@ -46,7 +46,7 @@ const OurSitters = () => {
         
         {/* Header */}
         <div className="text-center mb-20">
-          <h2 className="font-heading text-5xl md:text-6xl font-bold text-dark">
+          <h2 className="font-heading text-5xl md:text-6xl font-medium text-dark">
             Meet Our <span className="text-[#87D1C1]">Sitters</span>
           </h2>
 
@@ -82,7 +82,7 @@ const OurSitters = () => {
               </div>
 
               {/* Info */}
-              <h3 className="font-heading text-xl font-bold text-dark mb-1">
+              <h3 className="font-heading text-xl font-semibold text-dark mb-1">
                 {sitter.name}
               </h3>
 

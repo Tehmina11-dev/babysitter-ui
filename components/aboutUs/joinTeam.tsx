@@ -8,7 +8,7 @@ const JoinTeam = () => {
         
         {/* ===== Left Content ===== */}
         <div className="z-10">
-          <h2 className="font-heading text-5xl md:text-6xl font-bold text-dark leading-tight mb-8">
+          <h2 className="font-heading text-6xl md:text-5xl font-medium text-dark leading-tight mb-8">
             Join Our <span className="text-primary">Sitter Safely</span> team
           </h2>
           

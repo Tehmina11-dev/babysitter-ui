@@ -8,7 +8,7 @@ interface FeatureCardProps {
 export default function FeatureSmallCard({ icon, label, bgColor, textColor }: FeatureCardProps) {
   return (
     /* Using xl3 for the cards and font-heading for the label as per theme */
-    <div className={`${bgColor} h-40 rounded-xl flex flex-col items-center justify-center gap-3 transition-transform hover:scale-105 shadow-sm`}>
+    <div className={`${bgColor} h-32 rounded-xl p-5 flex flex-col items-center justify-center gap-3 transition-transform hover:scale-105 shadow-sm`}>
       <div className="text-3xl">
         {icon}
       </div>

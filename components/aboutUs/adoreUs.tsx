@@ -46,48 +46,46 @@ const AdoreUs = () => {
         
         {/* Header */}
         <div className="text-center mb-24">
-          <h2 className="font-heading text-5xl md:text-6xl font-bold text-dark leading-tight">
+          <h2 className="font-heading text-5xl md:text-6xl font-medium text-dark leading-tight">
             Why <span className="text-primary">Families</span> Adore Us
           </h2>
-          <p className="text-gray text-xl mt-4 font-sans italic opacity-80">
+          <p className="font-sans text-xl text-gray mt-4 italic opacity-80">
             Time-tested values in a modern world
           </p>
         </div>
 
         {/* Feature Cards Grid */}
-      {/* Feature Cards Grid */}
-<div className="grid grid-cols-1 md:grid-cols-3 gap-y-24 gap-x-8 lg:gap-x-12 mt-12">
-  {features.map((feature, index) => (
-    <div 
-      key={index} 
-      className={`
-        ${feature.bgColor} 
-        rounded-xl2 p-8 pt-16 text-center text-white relative shadow-lg 
-        transition-all duration-300 hover:shadow-card hover:scale-[1.02]
-        /* Pushes only the center card down on medium screens and up */
-        ${index === 1 ? 'md:translate-y-12' : ''}
-      `}
-    >
-      {/* Overlapping Icon Circle */}
-      <div className="absolute -top-12 left-1/2 -translate-x-1/2 w-24 h-24 bg-white rounded-full p-2 shadow-xl">
-        <div className={`${feature.bgColor} w-full h-full rounded-full flex items-center justify-center text-white`}>
-          {feature.icon}
-        </div>
-      </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-y-24 gap-x-8 lg:gap-x-12 mt-12">
+          {features.map((feature, index) => (
+            <div 
+              key={index} 
+              className={`
+                ${feature.bgColor} 
+                rounded-xl2 p-8 pt-16 text-center text-white relative shadow-lg 
+                transition-all duration-300 hover:shadow-card hover:scale-[1.02]
+                ${index === 1 ? 'md:translate-y-12' : ''}
+              `}
+            >
+              {/* Overlapping Icon Circle */}
+              <div className="absolute -top-12 left-1/2 -translate-x-1/2 w-24 h-24 bg-white rounded-full p-2 shadow-xl">
+                <div className={`${feature.bgColor} w-full h-full rounded-full flex items-center justify-center text-white`}>
+                  {feature.icon}
+                </div>
+              </div>
 
-      {/* Text Content */}
-      <h3 className="font-heading text-2xl font-bold mb-3 px-4">
-        {feature.title}
-      </h3>
-      <p className="font-heading text-sm font-semibold opacity-90 mb-6 tracking-wide uppercase">
-        {feature.subtitle}
-      </p>
-      <p className="font-sans text-base leading-relaxed opacity-95">
-        {feature.desc}
-      </p>
-    </div>
-  ))}
-</div>
+              {/* Text Content */}
+              <h3 className="font-heading text-xl font-medium mb-3 px-4">
+                {feature.title}
+              </h3>
+              <p className="font-sans text-sm font-semibold opacity-90 mb-6 tracking-wide capitalized">
+                {feature.subtitle}
+              </p>
+              <p className="font-sans text-base leading-relaxed opacity-95">
+                {feature.desc}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

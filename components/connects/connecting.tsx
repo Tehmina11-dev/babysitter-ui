@@ -42,7 +42,7 @@ const Connecting = () => {
 
         {/* Right Side: Content */}
         <div className="text-right lg:text-right">
-          <h2 className="font-heading text-4xl md:text-5xl font-bold leading-tight mb-6">
+          <h2 className="font-heading text-4xl md:text-5xl font-medium leading-tight mb-6">
             <span className="text-primary">Connecting</span> <span className="text-dark">Families with</span>
             <br />
             <span className="text-dark">Trusted</span> <span className="text-primary">Babysitters</span>
